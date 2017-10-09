@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041FA4F21F8BF05000D6BD5D /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043632051F8BE8FE008A703D /* GoogleMobileAds.framework */; };
 		04670E491F8BDFF10063DB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04670E481F8BDFF10063DB2C /* AppDelegate.swift */; };
 		04670E4B1F8BDFF10063DB2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04670E4A1F8BDFF10063DB2C /* ViewController.swift */; };
 		04670E4E1F8BDFF10063DB2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04670E4C1F8BDFF10063DB2C /* Main.storyboard */; };
@@ -30,17 +31,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041FA4F21F8BF05000D6BD5D /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041FA4F11F8BF05000D6BD5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		04670E3C1F8BDFF10063DB2C = {
 			isa = PBXGroup;
 			children = (
 				04670E471F8BDFF10063DB2C /* daily-dose */,
 				04670E461F8BDFF10063DB2C /* Products */,
+				041FA4F11F8BF05000D6BD5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = "daily-dose/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -300,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = "daily-dose/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
