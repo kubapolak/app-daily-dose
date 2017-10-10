@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		041FA4F21F8BF05000D6BD5D /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043632051F8BE8FE008A703D /* GoogleMobileAds.framework */; };
 		04670E491F8BDFF10063DB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04670E481F8BDFF10063DB2C /* AppDelegate.swift */; };
-		04670E4B1F8BDFF10063DB2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04670E4A1F8BDFF10063DB2C /* ViewController.swift */; };
+		04670E4B1F8BDFF10063DB2C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04670E4A1F8BDFF10063DB2C /* HomeVC.swift */; };
 		04670E4E1F8BDFF10063DB2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04670E4C1F8BDFF10063DB2C /* Main.storyboard */; };
 		04670E501F8BDFF10063DB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04670E4F1F8BDFF10063DB2C /* Assets.xcassets */; };
 		04670E531F8BDFF10063DB2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04670E511F8BDFF10063DB2C /* LaunchScreen.storyboard */; };
+		04D69AD71F8D391E00B8BC33 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D69AD61F8D391E00B8BC33 /* PurchaseManager.swift */; };
+		04D69ADA1F8D3A6400B8BC33 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D69AD91F8D3A6400B8BC33 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		043632051F8BE8FE008A703D /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../../../../../Downloads/GoogleMobileAdsSdkiOS-7.24.1/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		04670E451F8BDFF10063DB2C /* daily-dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daily-dose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04670E481F8BDFF10063DB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04670E4A1F8BDFF10063DB2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04670E4A1F8BDFF10063DB2C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		04670E4D1F8BDFF10063DB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04670E4F1F8BDFF10063DB2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04670E521F8BDFF10063DB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04670E541F8BDFF10063DB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D69AD61F8D391E00B8BC33 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		04D69AD91F8D3A6400B8BC33 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +69,11 @@
 		04670E471F8BDFF10063DB2C /* daily-dose */ = {
 			isa = PBXGroup;
 			children = (
+				04D69AD81F8D3A5400B8BC33 /* Utilities */,
+				04D69AD51F8D391100B8BC33 /* Services */,
+				04D69AD41F8D38E700B8BC33 /* Controller */,
 				04670E5B1F8BE8DA0063DB2C /* Frameworks */,
 				04670E481F8BDFF10063DB2C /* AppDelegate.swift */,
-				04670E4A1F8BDFF10063DB2C /* ViewController.swift */,
 				04670E4C1F8BDFF10063DB2C /* Main.storyboard */,
 				04670E4F1F8BDFF10063DB2C /* Assets.xcassets */,
 				04670E511F8BDFF10063DB2C /* LaunchScreen.storyboard */,
@@ -82,6 +88,30 @@
 				043632051F8BE8FE008A703D /* GoogleMobileAds.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		04D69AD41F8D38E700B8BC33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04670E4A1F8BDFF10063DB2C /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04D69AD51F8D391100B8BC33 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04D69AD61F8D391E00B8BC33 /* PurchaseManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04D69AD81F8D3A5400B8BC33 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04D69AD91F8D3A6400B8BC33 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04670E4B1F8BDFF10063DB2C /* ViewController.swift in Sources */,
+				04670E4B1F8BDFF10063DB2C /* HomeVC.swift in Sources */,
+				04D69AD71F8D391E00B8BC33 /* PurchaseManager.swift in Sources */,
 				04670E491F8BDFF10063DB2C /* AppDelegate.swift in Sources */,
+				04D69ADA1F8D3A6400B8BC33 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
